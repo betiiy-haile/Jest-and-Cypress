@@ -29,6 +29,9 @@ const Navbar = () => {
                         <Link href='/'>Home</Link>
                     </li>
                     <li className='hover:text-green-600'>
+                        <Link href='/posts'>Posts</Link>
+                    </li>
+                    <li className='hover:text-green-600'>
                         <Link href='/about'>About</Link>
                     </li>
                     <li className='hover:text-green-600'>
@@ -39,7 +42,7 @@ const Navbar = () => {
                             <li className='hover:text-green-600'>
                                 <Link href='/write'>Write</Link>
                             </li>
-                            <button className='bg-green-500 px-5 py-2 rounded-xl text-gray-100 border-2 border-green-500 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 hover:border-green-500' onClick={signOut}>Logout</button>
+                            <button className='bg-green-500 px-5 py-2 rounded-xl text-gray-100 border-2 border-green-500 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-green-500 hover:border-green-500' onClick={() => signOut()}>Logout</button>
                         </div>
                     )}
                     {

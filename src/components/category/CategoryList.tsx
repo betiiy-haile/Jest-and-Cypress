@@ -10,8 +10,9 @@ const CategoryList = () => {
           <h1 className={styles.title}>Popular Categories</h1>
           
           <div className={styles.categories}>
-              {categories?.map((item) => (
+              {categories?.map((item, index) => (
                   <Link
+                      key={index}
                       href={`/blog?cat=${item.name}`}
                       className={`${styles.category} ${styles[item.name]}`}
                   >
