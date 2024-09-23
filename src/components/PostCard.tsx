@@ -3,7 +3,7 @@ import Link from "next/link";
 const PostCard = () => {
     return (
         <div className=" mb-8 flex flex-col sm:flex-row items-center gap-8 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-700 hover:border-gray-500 p-4">
-            {/* Image Section */}
+            
             <div className="w-full sm:w-1/3 lg:w-1/4 overflow-hidden rounded-lg">
                 <img
                     src='/product.jpg'
@@ -12,7 +12,7 @@ const PostCard = () => {
                 />
             </div>
 
-            {/* Content Section */}
+            
             <div className="flex-1 text-white">
                 <div className="flex gap-2 mb-2 text-sm">
                     <span className="text-gray-500">10-3-2023 - </span>
